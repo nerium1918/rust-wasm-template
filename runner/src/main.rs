@@ -12,7 +12,7 @@ fn main() -> Result<()> {
 
     let basic = instance.exports.get_function("basic")?;
     let result = basic.call(&mut store, &[])?[0].to_string();
-    println!("Basic is {}", result);
+    println!("The answer is {}", result);
 
     Ok(())
 }
