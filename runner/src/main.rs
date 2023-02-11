@@ -3,7 +3,7 @@ use anyhow::Result;
 
 fn main() -> Result<()> {
     let mut store = Store::default();
-    let module = Module::from_file(&store, "/Users/petko/misc/wasm-rust/compiler/pkg/library_bg.wasm")?;
+    let module = Module::from_file(&store, "compiler/pkg/library_bg.wasm")?;
 
     let import_object = imports! {
         "fd_write" => {}
